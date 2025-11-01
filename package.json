@@ -1,0 +1,38 @@
+{
+  "name": "tarea-2-stellar-scripts",
+  "version": "1.0.0",
+  "description": "Scripts de JavaScript para trabajar con Stellar SDK",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "crear-cuenta": "node crear-cuenta.js",
+    "crear-cuenta-mejorado": "node crear-cuenta-mejorado.js",
+    "enviar-pago": "node enviar-pago.js",
+    "enviar-pago-mejorado": "node enviar-pago-mejorado.js",
+    "consultar-balance": "node consultar-balance.js",
+    "airdrop": "node airdrop.js",
+    "monitor": "node monitor-balance.js",
+    "calculadora-fees": "node calculadora-fees.js",
+    "wallet": "node mi-wallet.js",
+    "ejercicio-setup": "node ejercicio-terminal-setup.js",
+    "ejercicio-batch": "node ejercicio-terminal-batch.js",
+    "ejercicio-monitoreo": "node ejercicio-terminal-monitoreo.js",
+    "ejercicio-1-creacion-masiva": "node ejercicio-1-creacion-masiva.js",
+    "ejercicio-2-pagos-automatizados": "node ejercicio-2-pagos-automatizados.js",
+    "ejercicio-3-monitor-balances": "node ejercicio-3-monitor-balances.js",
+    "invoke-contract-js": "node invoke-contract.js",
+    "invoke-many-js": "node invoke-many.js",
+    "medir-tiempo": "node medir-tiempo.js"
+  },
+  "keywords": [
+    "stellar",
+    "blockchain",
+    "cryptocurrency"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@stellar/stellar-sdk": "^14.3.0",
+    "dotenv": "^16.6.1"
+  }
+}

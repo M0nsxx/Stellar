@@ -1,0 +1,26 @@
+node_modules/
+.env
+*.log
+mi-cuenta.json
+batch-pagos.log
+monitoreo.log
+destinatarios.json
+cuenta-prueba.json
+cuentas-multiples-*.json
+hello.wasm
+.contract-id
+# Cuentas creadas en ejercicios (contiene secret keys - NO SUBIR A GIT)
+cuentas-tarea-clase2.json
+
+# Rust build artifacts
+rust-ejercicios/target/
+rust-ejercicios/Cargo.lock
+**/*.rs.bk
+
+# OS files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+

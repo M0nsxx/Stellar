@@ -1,0 +1,19 @@
+[package]
+name = "rust-ejercicios-soroban"
+version = "1.0.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+name = "rust_ejercicios_soroban"
+
+[features]
+testutils = ["soroban-sdk/testutils"]
+default = []
+
+[dependencies]
+soroban-sdk = "20.3.0"
+
+[dev-dependencies]
+soroban-sdk = { version = "20.3.0", features = ["testutils"] }
+
