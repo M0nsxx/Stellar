@@ -1,320 +1,201 @@
-# 🦈 CLASE 2: TU PRIMERA LÍNEA DE CÓDIGO BLOCKCHAIN
+# 🚀 Stellar Codigo Futura - Proyecto Semana 2
 
-**Curso:** Código Futura con Stellar  
-**Semana:** 1 - Fundamentos Stellar  
-**Fecha:** Jueves 09/10/2025
+Este proyecto contiene scripts de JavaScript para trabajar con Stellar SDK en la red Testnet. Todos los ejercicios están diseñados para aprender y practicar con la blockchain de Stellar.
 
----
+## 📋 Ejercicios
 
-## 📚 MATERIAL DE ESTUDIO
+### Ejercicio 1: Creación Masiva de Cuentas
 
-¡Bienvenida Tiburona! Este es tu material de repaso para la Clase 2.
+- Crea 5 cuentas automáticamente
+- Todas fondeadas con Friendbot (10,000 XLM cada una)
+- Ejecutar: `node crear-multiples-cuentas.js`
 
-Hemos organizado todo en **documentos separados** para que sea más fácil estudiar:
+O con npm:
 
----
-
-## 📖 ORDEN DE LECTURA SUGERIDO
-
-```
-1️⃣ 01-que-lograste-hoy.md
-   └─ Resumen de lo que aprendiste
-   └─ Tus nuevas habilidades
-   └─ Celebración de logros
-
-2️⃣ 02-javascript-stellar.md
-   └─ Scripts que escribiste
-   └─ Cómo funcionan
-   └─ Explicación del código
-
-3️⃣ 03-terminal-y-cli.md
-   └─ Comandos de terminal
-   └─ Stellar CLI
-   └─ Trucos y tips
-
-4️⃣ 04-smart-contracts.md
-   └─ Tu primer contrato deployado
-   └─ Cómo funciona
-   └─ Cómo invocarlo
-
-5️⃣ 05-tarea-y-proximos-pasos.md
-   └─ Tarea #2
-   └─ Próxima clase
-   └─ Recursos útiles
+```bash
+npm run crear-multiples
 ```
 
----
+### Ejercicio 2: Sistema de Pagos
 
-## 🎯 ACCESO RÁPIDO
+- Envía 2 XLM a 3 cuentas diferentes
+- Cada pago con memo único
+- Ejecutar: `node ejercicio-2-pagos.js`
 
-### Documentos Principales
+O con npm:
 
-- [📄 Lo que lograste hoy](./01-que-lograste-hoy.md)
-- [💻 JavaScript y Stellar SDK](./02-javascript-stellar.md)
-- [⚡ Terminal y CLI](./03-terminal-y-cli.md)
-- [🚀 Smart Contracts](./04-smart-contracts.md)
-- [🚀 Smart Contracts - Completo](./04-smart-contracts-completo.md) - Guía detallada paso a paso
-- [📝 Tarea y Próximos Pasos](./05-tarea-y-proximos-pasos.md)
-- [📝 Tarea Clase 2](./06-tarea-clase-2.md) - Ejercicios prácticos detallados
+```bash
+npm run ejercicio-2-pagos
+```
 
-### Recursos Extra
+### Ejercicio 3: Monitor de Balances
 
-- [🔧 Troubleshooting](./recursos/troubleshooting.md)
-- [📚 Links útiles](./recursos/links-utiles.md)
-- [💡 Conceptos clave](./recursos/conceptos-clave.md)
+- Verifica balances de 4 cuentas
+- Muestra balance, trustlines, sequence
+- Ejecutar: `node ejercicio-3-monitor.js`
 
----
+O con npm:
 
-## 🚀 SCRIPTS DISPONIBLES
+```bash
+npm run ejercicio-3-monitor
+```
 
-### Scripts Principales
+### Ejercicio 4: Configuración de Proyecto
 
-- **`crear-cuenta.js`** - Genera cuenta y fondea con Friendbot
-- **`enviar-pago.js`** - Envía pagos de XLM
-- **`consultar-balance.js`** - Consulta balance y información
+- Muestra los pasos para configurar un proyecto Stellar desde cero
+- Verifica la configuración actual del proyecto
+- Ejecutar: `node ejercicio-4-setup-proyecto.js`
 
-### Scripts Mejorados
+O con npm:
 
-- **`crear-cuenta-mejorado.js`** - Validación, múltiples cuentas, guardar en archivo
-- **`enviar-pago-mejorado.js`** - Validación, múltiples pagos, múltiples operaciones
-- **`enviar-pago-dotenv.js`** - Manejo seguro con variables de entorno
+```bash
+npm run ejercicio-4-setup
+```
 
-### Ejercicios de Práctica
+## 📊 Cuentas Principales Utilizadas
 
-- **`airdrop.js`** - Enviar XLM a múltiples cuentas
-- **`monitor-balance.js`** - Monitorear balance periódicamente
-- **`calculadora-fees.js`** - Calcular costos de transacciones
+### Cuenta #1 (Principal - Envía pagos)
 
-### Ejercicios de Terminal y CLI
+**Public Key**: `GAY7MEJJMSXRQZKEWYFWGWBIZRONXK5BPBW2SZFFQINFSXUREVQN25PF`
 
-- **`ejercicio-terminal-setup.js`** - Script de setup automático
-- **`ejercicio-terminal-batch.js`** - Procesamiento batch de pagos
-- **`ejercicio-terminal-monitoreo.js`** - Monitoreo avanzado con logs
+**Secret Key**: `SCHKVPBYYFG4KBG2JIKVXSNTPIQZYH4CQTSZIJ3L6KVEKG4SL22W7HLS` ⚠️ NUNCA COMPARTIR
 
-### Ejercicios de la Tarea Clase 2
+### Cuentas Destinatarias
 
-- **`ejercicio-1-creacion-masiva.js`** - Crear 5 cuentas automáticamente
-- **`ejercicio-2-pagos-automatizados.js`** - Sistema de pagos a múltiples destinos
-- **`ejercicio-3-monitor-balances.js`** - Monitor de balances de múltiples cuentas
+- **Cuenta #2**: `GAL5VGY5Z4KGVTQ5UVOCCOWSYZPQV34EM3I676GJ3BRSFDMMN3K36MZI`
+- **Cuenta #3**: `GBKCFHUMWDK5RENETIM264U357ERDYXPPMFTYVW4X4LTE6SJ4JX4GXSQ`
+- **Cuenta #4**: `GANMMUWU6NNTXXYRPS2FA7HQIGP3QAJA3HMMLACHJS5D7AWXD7KKOH7V`
+- **Cuenta #5**: `GB7CRYRZLAIEJZ6LZDGIT26QYU7Z3VB5KYZQ4COOC37YBKBXKPZMKH6M`
 
-### Smart Contracts (Soroban)
+⚠️ **IMPORTANTE**: Estas son cuentas de **TESTNET** y no tienen valor monetario real.
 
-- **`invoke-contract.js`** - Invocar contrato desde JavaScript
-- **`invoke-many.js`** - Invocación masiva
-- **`medir-tiempo.js`** - Medir tiempo de ejecución
+## 🚀 Setup
 
-### Proyecto Final
+### Requisitos Previos
 
-- **`mi-wallet.js`** - Wallet interactiva completa con menú
+- Node.js (v14 o superior)
+- npm (v6 o superior)
 
----
+### Instalación
 
-## 📦 INSTALACIÓN
+1. **Clonar o descargar el proyecto**
+
+```bash
+cd StellarCodigoFutura
+```
+
+2. **Instalar dependencias**
 
 ```bash
 npm install
 ```
 
----
+Esto instalará automáticamente:
+- `@stellar/stellar-sdk` - SDK oficial de Stellar
+- `dotenv` - Para variables de entorno (opcional)
 
-## ⚡ INICIO RÁPIDO
+3. **Verificar configuración**
 
-**¿Primera vez aquí?**
+El proyecto ya está configurado con:
+- `"type": "module"` en `package.json` para usar sintaxis ES6
+- Dependencias instaladas
 
-1. Lee primero: [`01-que-lograste-hoy.md`](./01-que-lograste-hoy.md)
-2. Si quieres repasar código: [`02-javascript-stellar.md`](./02-javascript-stellar.md)
-3. Si necesitas ayuda con errores: [`recursos/troubleshooting.md`](./recursos/troubleshooting.md)
+### Configuración Inicial (Si creas un proyecto nuevo)
 
----
-
-## 🎮 CÓMO EJECUTAR SCRIPTS
-
-### Scripts Básicos
+Si quieres crear un proyecto desde cero:
 
 ```bash
-npm run crear-cuenta
-npm run enviar-pago
-npm run consultar-balance
+# 1. Crear directorio del proyecto
+mkdir stellar-tarea2
+cd stellar-tarea2
+
+# 2. Inicializar proyecto Node.js
+npm init -y
+
+# 3. Instalar Stellar SDK
+npm install @stellar/stellar-sdk
+
+# 4. Configurar package.json
+# Agregar "type": "module" en package.json
 ```
 
-### Scripts Mejorados
+Ejemplo de `package.json`:
 
-```bash
-npm run crear-cuenta-mejorado
-npm run enviar-pago-mejorado
+```json
+{
+  "name": "stellar-tarea2",
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "@stellar/stellar-sdk": "^latest"
+  }
+}
 ```
 
-### Ejercicios
+## 📝 Scripts Disponibles
+
+Puedes ejecutar los ejercicios usando npm:
 
 ```bash
-npm run airdrop
-npm run monitor
-npm run calculadora-fees
-```
+# Ejercicio 1: Crear múltiples cuentas
+npm run crear-multiples
 
-### Ejercicios de Terminal
-
-```bash
-npm run ejercicio-setup
-npm run ejercicio-batch
-npm run ejercicio-monitoreo
-```
-
-### Ejercicios de la Tarea
-
-```bash
-# Ejercicio 1: Creación masiva de cuentas
-# ⚠️ Ejecuta PRIMERO este ejercicio - crea las cuentas que usarán los otros ejercicios
-npm run ejercicio-1-creacion-masiva
-
-# Ejercicio 2: Sistema de pagos automatizado
-# 💡 Lee automáticamente las cuentas del Ejercicio 1
-npm run ejercicio-2-pagos-automatizados
+# Ejercicio 2: Sistema de pagos
+npm run ejercicio-2-pagos
 
 # Ejercicio 3: Monitor de balances
-# 💡 Lee automáticamente las cuentas del Ejercicio 1
-npm run ejercicio-3-monitor-balances
+npm run ejercicio-3-monitor
+
+# Ejercicio 4: Verificar configuración
+npm run ejercicio-4-setup
 ```
 
-**💡 Nota:** Los ejercicios 2 y 3 están configurados para usar automáticamente las cuentas creadas en el Ejercicio 1. También puedes configurarlos manualmente editando los archivos.
-
-### Smart Contracts
+O ejecutar directamente con Node.js:
 
 ```bash
-# Invocar contrato
-npm run invoke-contract-js "Ana"
-
-# Invocación masiva
-npm run invoke-many-js
-
-# Medir tiempo
-npm run medir-tiempo
+node crear-multiples-cuentas.js
+node ejercicio-2-pagos.js
+node ejercicio-3-monitor.js
+node ejercicio-4-setup-proyecto.js
 ```
 
-### Proyecto Final
+## 📚 Documentación
 
-```bash
-npm run wallet
-```
+Para más detalles sobre cada ejercicio, consulta el archivo:
 
----
+- **[SEMANA-2.md](./SEMANA-2.md)** - Documentación completa de todos los ejercicios con código, resultados y explicaciones
 
-## 🆘 ¿NECESITAS AYUDA?
+## 🔗 Enlaces Útiles
 
-- **Troubleshooting:** [recursos/troubleshooting.md](./recursos/troubleshooting.md)
-- **Conceptos Clave:** [recursos/conceptos-clave.md](./recursos/conceptos-clave.md)
-- **Links Útiles:** [recursos/links-utiles.md](./recursos/links-utiles.md)
+- **Horizon Testnet**: https://horizon-testnet.stellar.org/
+- **Friendbot**: https://friendbot.stellar.org/
+- **Explorador Testnet**: https://stellar.expert/explorer/testnet
+- **Documentación Stellar**: https://developers.stellar.org/
+- **SDK de Stellar**: https://stellar.github.io/js-stellar-sdk/
 
-### Canales de Soporte
+## ⚠️ Advertencias Importantes
 
-- **Discord del curso:** [link]
-- **Stellar Discord:** https://discord.gg/stellardev
-- **Documentación:** https://developers.stellar.org
+- 🔒 **NUNCA** compartas tus Secret Keys públicamente
+- 💾 Guarda todas las llaves en un lugar seguro
+- ⚠️ Estas son cuentas de **TESTNET** y no tienen valor monetario real
+- 🧪 Todos los scripts están configurados para usar **Stellar Testnet**
 
----
+## 📄 Archivos Importantes
 
-## ✅ CHECKLIST DE COMPLETITUD
+- `SEMANA-2.md` - Documentación completa de ejercicios
+- `cuentas-stellar-testnet.md` - Información detallada de las cuentas creadas
+- `package.json` - Configuración del proyecto y scripts
 
-- [x] ✅ Scripts principales (3)
-- [x] ✅ Scripts mejorados (3)
-- [x] ✅ Ejercicios de práctica (3)
-- [x] ✅ Ejercicios de Terminal y CLI (3)
-- [x] ✅ Ejercicios de la Tarea Clase 2 (3)
-- [x] ✅ Smart Contracts scripts (3)
-- [x] ✅ Proyecto final (Wallet)
-- [x] ✅ Documentación completa (6 documentos principales + 1 completo)
-- [x] ✅ Recursos de ayuda (3 documentos)
-- [x] ✅ Todos los ejercicios completados (24 scripts total)
+## 🛠️ Tecnologías Utilizadas
 
----
+- **Node.js** - Entorno de ejecución JavaScript
+- **@stellar/stellar-sdk** - SDK oficial de Stellar
+- **ES6 Modules** - Sintaxis moderna de JavaScript
 
-## 📥 DESCARGAR TODO
+## 📝 Licencia
 
-Puedes descargar todo el material en formato ZIP:
-
-- Click en "Code" → "Download ZIP"
-- O clona el repo: `git clone [url]`
+MIT
 
 ---
 
-## 🦈 RECORDATORIO
-
-> "Las Tiburonas no solo leen código.  
-> Las Tiburonas ESCRIBEN código.  
-> Y tú ya lo hiciste." 💪
-
----
-
-## 📚 ESTRUCTURA DEL PROYECTO
-
-```
-Tarea 2/
-├── 📄 README.md                    # Este archivo
-├── 📄 01-que-lograste-hoy.md      # Resumen de logros
-├── 📄 02-javascript-stellar.md    # Documentación de scripts
-├── 📄 03-terminal-y-cli.md        # Guía de terminal
-├── 📄 04-smart-contracts.md       # Guía de Smart Contracts
-├── 📄 05-tarea-y-proximos-pasos.md # Tarea y próximos pasos
-├── 📄 06-tarea-clase-2.md          # Ejercicios prácticos detallados
-│
-├── 💻 Scripts Principales/
-│   ├── crear-cuenta.js
-│   ├── enviar-pago.js
-│   └── consultar-balance.js
-│
-├── ✨ Scripts Mejorados/
-│   ├── crear-cuenta-mejorado.js
-│   ├── enviar-pago-mejorado.js
-│   └── enviar-pago-dotenv.js
-│
-├── 🎯 Ejercicios/
-│   ├── airdrop.js
-│   ├── monitor-balance.js
-│   └── calculadora-fees.js
-│
-├── ⚡ Ejercicios Terminal/
-│   ├── ejercicio-terminal-setup.js
-│   ├── ejercicio-terminal-batch.js
-│   └── ejercicio-terminal-monitoreo.js
-│
-├── 📝 Ejercicios Tarea Clase 2/
-│   ├── ejercicio-1-creacion-masiva.js
-│   ├── ejercicio-2-pagos-automatizados.js
-│   └── ejercicio-3-monitor-balances.js
-│
-├── 🔐 Smart Contracts/
-│   ├── invoke-contract.js
-│   ├── invoke-many.js
-│   └── medir-tiempo.js
-│
-├── 🚀 Proyecto Final/
-│   └── mi-wallet.js
-│
-├── 📚 Recursos/
-│   ├── troubleshooting.md
-│   ├── links-utiles.md
-│   └── conceptos-clave.md
-│
-└── ⚙️ Configuración/
-    ├── package.json
-    ├── .gitignore
-    └── .env.ejemplo
-```
-
----
-
-## 🎉 ¡TODO COMPLETO!
-
-**✅ Todos los ejercicios están implementados y funcionando**
-
-**✅ Toda la documentación está disponible**
-
-**✅ Todos los recursos de ayuda están listos**
-
----
-
-**Sigue practicando. Sigue construyendo. 🦈⚡**
-
----
-
-**Creado con ❤️ para las Tiburonas Builders**
+**Desarrollado para el curso de Stellar - Semana 2**

@@ -22,7 +22,11 @@
     "ejercicio-3-monitor-balances": "node ejercicio-3-monitor-balances.js",
     "invoke-contract-js": "node invoke-contract.js",
     "invoke-many-js": "node invoke-many.js",
-    "medir-tiempo": "node medir-tiempo.js"
+    "medir-tiempo": "node medir-tiempo.js",
+    "crear-multiples": "node crear-multiples-cuentas.js",
+    "ejercicio-2-pagos": "node ejercicio-2-pagos.js",
+    "ejercicio-3-monitor": "node ejercicio-3-monitor.js",
+    "ejercicio-4-setup": "node ejercicio-4-setup-proyecto.js"
   },
   "keywords": [
     "stellar",
